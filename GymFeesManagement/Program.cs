@@ -1,5 +1,9 @@
 
 using GymFeesManagement.Database;
+using GymFeesManagement.IRepositories;
+using GymFeesManagement.IServices;
+using GymFeesManagement.Repositories;
+using GymFeesManagement.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace GymFeesManagement
@@ -17,6 +21,9 @@ namespace GymFeesManagement
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
+
+            builder.Services.AddScoped<IGymProgramRepository, GymProgramRepository>();
+            builder.Services.AddScoped< IGymProgramService, GymProgramService>();
 
             var app = builder.Build();
 

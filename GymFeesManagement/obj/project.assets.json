@@ -4457,19 +4457,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ut01198\\.nuget\\packages\\": {}
+    "C:\\Users\\ut03304\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\GymFeesManagement.csproj",
+      "projectUniqueName": "X:\\__MileStone-3\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
       "projectName": "GymFeesManagement",
-      "projectPath": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\GymFeesManagement.csproj",
-      "packagesPath": "C:\\Users\\Ut01198\\.nuget\\packages\\",
-      "outputPath": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\obj\\",
+      "projectPath": "X:\\__MileStone-3\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
+      "packagesPath": "C:\\Users\\ut03304\\.nuget\\packages\\",
+      "outputPath": "X:\\__MileStone-3\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ut01198\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ut03304\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
