@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\milestone3\\backend\\gymfeesmanagement\\gymfeesmanagement\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\milestone3\\backend\\gymfeesmanagement\\gymfeesmanagement\\entities\\gymprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\entities\\gymprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\milestone3\\backend\\gymfeesmanagement\\gymfeesmanagement\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\milestone3\\backend\\gymfeesmanagement\\gymfeesmanagement\\entities\\entrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\entities\\entrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\milestone3\\backend\\gymfeesmanagement\\gymfeesmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\milestone3\\backend\\gymfeesmanagement\\gymfeesmanagement\\entities\\memberdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\entities\\memberdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\milestone3\\backend\\gymfeesmanagement\\gymfeesmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MemberDetail.cs",
+              "DocumentMoniker": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Entities\\MemberDetail.cs",
+              "RelativeDocumentMoniker": "GymFeesManagement\\Entities\\MemberDetail.cs",
+              "ToolTip": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Entities\\MemberDetail.cs",
+              "RelativeToolTip": "GymFeesManagement\\Entities\\MemberDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T09:41:23.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GymProgram.cs",
+              "DocumentMoniker": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Entities\\GymProgram.cs",
+              "RelativeDocumentMoniker": "GymFeesManagement\\Entities\\GymProgram.cs",
+              "ToolTip": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Entities\\GymProgram.cs",
+              "RelativeToolTip": "GymFeesManagement\\Entities\\GymProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T09:30:19.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Database\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "GymFeesManagement\\Database\\AppDbContext.cs",
+              "ToolTip": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Database\\AppDbContext.cs",
+              "RelativeToolTip": "GymFeesManagement\\Database\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T09:04:23.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Entrollment.cs",
+              "DocumentMoniker": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Entities\\Entrollment.cs",
+              "RelativeDocumentMoniker": "GymFeesManagement\\Entities\\Entrollment.cs",
+              "ToolTip": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Entities\\Entrollment.cs",
+              "RelativeToolTip": "GymFeesManagement\\Entities\\Entrollment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T13:24:15.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Entities\\Payment.cs",
+              "RelativeDocumentMoniker": "GymFeesManagement\\Entities\\Payment.cs",
+              "ToolTip": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Entities\\Payment.cs",
+              "RelativeToolTip": "GymFeesManagement\\Entities\\Payment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T13:24:12.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "GymFeesManagement\\appsettings.json",
+              "ToolTip": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\appsettings.json",
+              "RelativeToolTip": "GymFeesManagement\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-10T13:21:39.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Program.cs",
+              "RelativeDocumentMoniker": "GymFeesManagement\\Program.cs",
+              "ToolTip": "X:\\MileStone3\\BackEnd\\GymFeesManagement\\GymFeesManagement\\Program.cs",
+              "RelativeToolTip": "GymFeesManagement\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T13:19:52.67Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
