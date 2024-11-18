@@ -1,4 +1,6 @@
-﻿using GymFeesManagement.Entities;
+﻿using GymFeesManagement.DTOs.ReqDTO;
+using GymFeesManagement.DTOs.ResDTO;
+using GymFeesManagement.Entities;
 
 namespace GymFeesManagement.IServices
 {
@@ -7,7 +9,8 @@ namespace GymFeesManagement.IServices
         Task<GymProgram> PostProgram(GymProgram program);
         Task<ICollection<GymProgram>> GetPrograms();
         Task<GymProgram> GetProgram(int id);
-        Task<GymProgram> PutProgram(GymProgram program, int id);
+        
+        Task<ProgramResponseDTO> UpdateProgram(ProgramRequestDTO programDTO, int id);
         Task<string> DeleteProgram(int id);
 
     }    

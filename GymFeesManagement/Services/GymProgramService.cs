@@ -1,4 +1,6 @@
-﻿using GymFeesManagement.Entities;
+﻿using GymFeesManagement.DTOs.ReqDTO;
+using GymFeesManagement.DTOs.ResDTO;
+using GymFeesManagement.Entities;
 using GymFeesManagement.IRepositories;
 using GymFeesManagement.IServices;
 
@@ -27,19 +29,34 @@ namespace GymFeesManagement.Services
             return await _gymProgramRepository.GetProgram(id);
         }
 
-        public async Task<GymProgram> PutProgram(GymProgram program, int id)
+       
+
+
+        public async Task<ProgramResponseDTO> UpdateProgram(ProgramRequestDTO programDTO, int id)
         {
+
             var getProgram = await _gymProgramRepository.GetProgram(id);
 
-            if (getProgram != null)
+
+
+            getProgram.Name = programDTO.Name;
+            getProgram.Description = programDTO.Description;
+            getProgram.Programstatus = programDTO.Programstatus;
+           
+
+            var check = await _gymProgramRepository.UpdateProgram(getProgram);
+
+            var res = new ProgramResponseDTO
             {
-                return await _gymProgramRepository.PutProgram(program);
-            }
-            else {
-                throw new Exception();
-            }
-            
+                Id = id,
+                Name = check.Name,
+                Description = check.Description,
+                CreatedDate = check.CreatedDate,
+            };
+            return res;
         }
+
+
         public async Task<string> DeleteProgram(int id)
         {
             return await _gymProgramRepository.DeleteProgram(id);

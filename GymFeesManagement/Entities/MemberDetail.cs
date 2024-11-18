@@ -13,11 +13,12 @@ namespace GymFeesManagement.Entities
         public string PasswordHashed { get; set; }
         [Required]
         public string ContactNumber { get; set; }
+
+        [Required]
         public string Email { get; set; }
         
         public string NIC { get; set; }
         public int Age { get; set; }
-        [Required]
         public Gender Gender { get; set; }
         public decimal? Height { get; set; }
         public decimal? Weight { get; set; }
@@ -30,10 +31,5 @@ namespace GymFeesManagement.Entities
 
     }
 
-    public enum Gender
-    {
-        Male,
-        Female,
-        Other
-    }
+    
 }

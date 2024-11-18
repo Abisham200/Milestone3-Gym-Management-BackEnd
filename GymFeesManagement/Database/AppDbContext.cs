@@ -22,7 +22,6 @@ namespace GymFeesManagement.Database
 
         public DbSet <User> Users { get; set; }
         public DbSet<Entrollment> Entrollments { get; set; }
-        public DbSet<MemberDetail> MemberDetails { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<GymProgram> Programs { get; set; }

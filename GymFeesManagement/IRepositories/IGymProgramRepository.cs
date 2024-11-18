@@ -7,7 +7,7 @@ namespace GymFeesManagement.IRepositories
         Task<GymProgram> PostProgram(GymProgram program);
         Task<GymProgram> GetProgram(int id);
         Task<ICollection<GymProgram>> GetPrograms();
-        Task<GymProgram> PutProgram(GymProgram program);
+        Task<GymProgram> UpdateProgram(GymProgram Program);
         Task<string> DeleteProgram(int id);
 
     }

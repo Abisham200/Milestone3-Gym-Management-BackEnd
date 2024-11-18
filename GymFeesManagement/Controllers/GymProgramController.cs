@@ -1,4 +1,5 @@
-﻿using GymFeesManagement.Entities;
+﻿using GymFeesManagement.DTOs.ReqDTO;
+using GymFeesManagement.Entities;
 using GymFeesManagement.IServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -41,21 +42,20 @@ namespace GymFeesManagement.Controllers
 
         // PUT: api/Programs/5
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutProgram(int id, GymProgram program)
+
+        [HttpPut("programUpdate/{id}")]
+        public async Task<IActionResult> UpdateProgram(int id, ProgramRequestDTO program)
         {
-           
             try
             {
-                var data = await _gymProgramService.PutProgram(program, id);
+                var data = await _gymProgramService.UpdateProgram(program, id);
                 return Ok(data);
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 return NotFound(ex.Message);
             }
             
-
         }
 
         // POST: api/Programs
@@ -67,6 +67,8 @@ namespace GymFeesManagement.Controllers
             var data = await _gymProgramService.PostProgram(program);
             return Ok(data);
         }
+
+        
 
         // DELETE: api/Programs/5
         [HttpDelete("{id}")]

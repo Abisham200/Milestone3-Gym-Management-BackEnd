@@ -24,6 +24,11 @@ namespace GymFeesManagement
 
             builder.Services.AddScoped<IGymProgramRepository, GymProgramRepository>();
             builder.Services.AddScoped< IGymProgramService, GymProgramService>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+            builder.Services.AddScoped<IPaymentService, PaymentService>();
+
 
             var app = builder.Build();
 

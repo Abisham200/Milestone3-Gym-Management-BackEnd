@@ -39,12 +39,20 @@ namespace GymFeesManagement.Repositories
             return await _appDbContext.Programs.ToListAsync();
         }
 
-        public async Task<GymProgram> PutProgram(GymProgram program)
-        {
-            _appDbContext.Entry(program).State = EntityState.Modified;
-            await _appDbContext.SaveChangesAsync();
+        //public async Task<GymProgram> PutProgram(GymProgram program)
+        //{
+        //     _appDbContext.Entry(program).State = EntityState.Modified;
+        //    await _appDbContext.SaveChangesAsync();
 
-            return program;
+        //    return program;
+        //}
+
+
+        public async Task<GymProgram> UpdateProgram(GymProgram Program)
+        {
+            var data = _appDbContext.Programs.Update(Program);
+            await _appDbContext.SaveChangesAsync();
+            return data.Entity;
         }
 
         public async Task<string> DeleteProgram(int id)

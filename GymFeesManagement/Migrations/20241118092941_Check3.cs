@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace GymFeesManagement.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class Check3 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "MemberDetails",
+                name: "MemberDetail",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -34,7 +34,7 @@ namespace GymFeesManagement.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MemberDetails", x => x.Id);
+                    table.PrimaryKey("PK_MemberDetail", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -59,8 +59,21 @@ namespace GymFeesManagement.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Roles = table.Column<int>(type: "int", nullable: false)
+                    ContactNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NIC = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Age = table.Column<int>(type: "int", nullable: false),
+                    Gender = table.Column<int>(type: "int", nullable: false),
+                    Height = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    Weight = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    CreationDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    MemberStatus = table.Column<bool>(type: "bit", nullable: true),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ProfileImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Role = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -80,9 +93,9 @@ namespace GymFeesManagement.Migrations
                 {
                     table.PrimaryKey("PK_Notifications", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Notifications_MemberDetails_MemberId",
+                        name: "FK_Notifications_MemberDetail_MemberId",
                         column: x => x.MemberId,
-                        principalTable: "MemberDetails",
+                        principalTable: "MemberDetail",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -102,9 +115,9 @@ namespace GymFeesManagement.Migrations
                 {
                     table.PrimaryKey("PK_SkippedPayments", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_SkippedPayments_MemberDetails_MemberId",
+                        name: "FK_SkippedPayments_MemberDetail_MemberId",
                         column: x => x.MemberId,
-                        principalTable: "MemberDetails",
+                        principalTable: "MemberDetail",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -124,9 +137,9 @@ namespace GymFeesManagement.Migrations
                 {
                     table.PrimaryKey("PK_Entrollments", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Entrollments_MemberDetails_MemberId",
+                        name: "FK_Entrollments_MemberDetail_MemberId",
                         column: x => x.MemberId,
-                        principalTable: "MemberDetails",
+                        principalTable: "MemberDetail",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -204,7 +217,7 @@ namespace GymFeesManagement.Migrations
                 name: "Entrollments");
 
             migrationBuilder.DropTable(
-                name: "MemberDetails");
+                name: "MemberDetail");
 
             migrationBuilder.DropTable(
                 name: "Programs");
