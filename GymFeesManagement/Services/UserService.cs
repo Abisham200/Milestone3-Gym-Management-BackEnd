@@ -2,6 +2,7 @@
 using GymFeesManagement.Entities;
 using GymFeesManagement.IRepositories;
 using GymFeesManagement.IServices;
+using GymFeesManagement.Repositories;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -34,9 +35,41 @@ namespace GymFeesManagement.Services
             return await _userRepository.GetUserByEmail(email);
         }
 
-        public async Task<User> UpdateUser(User user, int id)
+        public async Task<User> UpdateUser(int id, UserRequest userRequest)
         {
-            return await _userRepository.UpdateUser(user);
+           var getUser = await _userRepository.GetUser(id);
+
+            getUser.FirstName = userRequest.FirstName;
+            getUser.LastName = userRequest.LastName;
+            getUser.ContactNumber = userRequest.ContactNumber;
+            getUser.Email = userRequest.Email;
+            getUser.NIC = userRequest.NIC;
+            getUser.Age = userRequest.Age;
+            getUser.Gender = userRequest.Gender;
+            getUser.Height = userRequest.Height;
+            getUser.Weight = userRequest.Weight;
+            getUser.Address = userRequest.Address;
+            getUser.Role = userRequest.Role;
+
+            var check = await _userRepository.UpdateUser(getUser);
+
+            var user = new User
+            {
+                Id = id,
+                FirstName = check.FirstName,
+                LastName = check.LastName,
+                ContactNumber = check.ContactNumber,
+                Email = check.Email,
+                NIC = check.NIC,
+                Age = check.Age,
+                Gender = check.Gender,
+                Height = check.Height,
+                Weight = check.Weight,
+                Address = check.Address,
+                Role = check.Role,
+
+            };
+             return user;
         }
 
         public async Task<string> DeleteUser(int id)

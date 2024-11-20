@@ -2,8 +2,10 @@
 using GymFeesManagement.DTOs.ReqDTO;
 using GymFeesManagement.Entities;
 using GymFeesManagement.IServices;
+using GymFeesManagement.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ActionConstraints;
 using Microsoft.EntityFrameworkCore;
 
 namespace GymFeesManagement.Controllers
@@ -21,6 +23,62 @@ namespace GymFeesManagement.Controllers
             _userService = userService;
         }
 
+        [HttpGet("GetUsers")]
+        public async Task<IActionResult> GetUsers()
+        {
+            try
+            {
+                var data = await _userService.GetUsers();
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("GetUserByID/{id}")]
+        public async Task<IActionResult> GetUser(int id)
+        {
+            try
+            {
+                var data = await _userService.GetUser(id);
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("GetUserByEmail")]
+        public async Task<IActionResult> GetUserByEmail(string email)
+        {
+            try
+            {
+                var data = await _userService.GetUserByEmail(email);
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut("UpdateUser")]
+        public async Task<IActionResult> UpdateUser(int id,UserRequest userRequest)
+        {
+               try
+                {
+                    var data = await _userService.UpdateUser(id, userRequest);
+                    return Ok(data);
+                }
+                catch (Exception ex)
+                {
+                    return NotFound(ex.Message);
+                }
+
+        }
 
         [HttpPost("Register")]
         public async Task<IActionResult> Register(UserRequest userRequest)
@@ -52,7 +110,20 @@ namespace GymFeesManagement.Controllers
             }
 
         }
-        
+
+        [HttpDelete("DeleteUser/{id}")]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            try
+            {
+                var data = await _userService.DeleteUser(id);
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
     }
 }

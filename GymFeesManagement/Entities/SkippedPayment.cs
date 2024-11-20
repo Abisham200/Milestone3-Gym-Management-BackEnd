@@ -10,7 +10,7 @@ namespace GymFeesManagement.Entities
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public string Reason { get; set; }
-        public MemberDetail? Member {  get; set; }
-        public int MemberId { get; set; }
+        public User? user {  get; set; }
+        public int UserId { get; set; }
     }
 }

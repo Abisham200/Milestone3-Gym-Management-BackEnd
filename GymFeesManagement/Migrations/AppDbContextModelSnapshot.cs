@@ -36,17 +36,17 @@ namespace GymFeesManagement.Migrations
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("MemberId")
+                    b.Property<int>("ProgramId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProgramId")
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MemberId");
-
                     b.HasIndex("ProgramId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Entrollments");
                 });
@@ -78,67 +78,6 @@ namespace GymFeesManagement.Migrations
                     b.ToTable("Programs");
                 });
 
-            modelBuilder.Entity("GymFeesManagement.Entities.MemberDetail", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Age")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ContactNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Gender")
-                        .HasColumnType("int");
-
-                    b.Property<decimal?>("Height")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool?>("MemberStatus")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("NIC")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PasswordHashed")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ProfileImage")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal?>("Weight")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("MemberDetail");
-                });
-
             modelBuilder.Entity("GymFeesManagement.Entities.Notification", b =>
                 {
                     b.Property<int>("Id")
@@ -150,12 +89,12 @@ namespace GymFeesManagement.Migrations
                     b.Property<int>("Description")
                         .HasColumnType("int");
 
-                    b.Property<int>("MemberId")
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MemberId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Notifications");
                 });
@@ -197,9 +136,6 @@ namespace GymFeesManagement.Migrations
                     b.Property<DateTime>("EndTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("MemberId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Reason")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -207,9 +143,12 @@ namespace GymFeesManagement.Migrations
                     b.Property<DateTime>("StartTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("MemberId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("SkippedPayments");
                 });
@@ -280,32 +219,32 @@ namespace GymFeesManagement.Migrations
 
             modelBuilder.Entity("GymFeesManagement.Entities.Entrollment", b =>
                 {
-                    b.HasOne("GymFeesManagement.Entities.MemberDetail", "Member")
-                        .WithMany()
-                        .HasForeignKey("MemberId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("GymFeesManagement.Entities.GymProgram", "Program")
                         .WithMany()
                         .HasForeignKey("ProgramId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Member");
+                    b.HasOne("GymFeesManagement.Entities.User", "user")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Program");
+
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("GymFeesManagement.Entities.Notification", b =>
                 {
-                    b.HasOne("GymFeesManagement.Entities.MemberDetail", "Member")
+                    b.HasOne("GymFeesManagement.Entities.User", "user")
                         .WithMany()
-                        .HasForeignKey("MemberId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Member");
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("GymFeesManagement.Entities.Payment", b =>
@@ -321,13 +260,13 @@ namespace GymFeesManagement.Migrations
 
             modelBuilder.Entity("GymFeesManagement.Entities.SkippedPayment", b =>
                 {
-                    b.HasOne("GymFeesManagement.Entities.MemberDetail", "Member")
+                    b.HasOne("GymFeesManagement.Entities.User", "user")
                         .WithMany()
-                        .HasForeignKey("MemberId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Member");
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("GymFeesManagement.Entities.Entrollment", b =>

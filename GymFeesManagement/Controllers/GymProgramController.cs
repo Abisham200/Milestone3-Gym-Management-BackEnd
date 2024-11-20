@@ -18,11 +18,19 @@ namespace GymFeesManagement.Controllers
             _gymProgramService = gymProgramService;
         }
 
-        [HttpGet]
+        [HttpGet("GetPrograms")]
         public async Task<IActionResult> GetPrograms()
         {
-            var data = await _gymProgramService.GetPrograms();
-            return Ok(data);
+            try
+            {
+                var data = await _gymProgramService.GetPrograms();
+                return Ok(data);
+            }
+            catch (Exception ex) 
+            {
+            return BadRequest(ex.Message);
+            }
+           
         }
 
         // GET: api/Programs/5
@@ -63,9 +71,17 @@ namespace GymFeesManagement.Controllers
         [HttpPost]
         public async Task<IActionResult> PostProgram(GymProgram program)
         {
+            try 
+            {
+                var data = await _gymProgramService.PostProgram(program);
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
-            var data = await _gymProgramService.PostProgram(program);
-            return Ok(data);
+
         }
 
         

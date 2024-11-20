@@ -44,10 +44,10 @@ namespace GymFeesManagement.Repositories
 
         public async Task<User> UpdateUser(User user)
         {
-            _appDbContext.Entry(user).State = EntityState.Modified;
+            var data =  _appDbContext.Users.Update(user);
             await _appDbContext.SaveChangesAsync();
 
-            return user;
+            return data.Entity;
         }
 
         public async Task<User> Register(User user)

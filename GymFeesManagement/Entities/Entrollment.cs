@@ -6,8 +6,8 @@ namespace GymFeesManagement.Entities
     {
         [Key]
         public int Id { get; set; }
-        public MemberDetail Member {  get; set; } 
-        public int MemberId { get; set; }
+        public User user {  get; set; } 
+        public int UserId { get; set; }
         public GymProgram? Program {  get; set; }
         public int ProgramId { get; set; }
         public DateTime CreatedDate { get; set; }

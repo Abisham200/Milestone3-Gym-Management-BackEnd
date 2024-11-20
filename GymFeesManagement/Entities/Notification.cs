@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public int Description { get; set; }
-        public MemberDetail? Member {  get; set; }
-        public int MemberId { get; set; }
+        public User? user {  get; set; }
+        public int UserId { get; set; }
     }
 }
