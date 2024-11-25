@@ -6,7 +6,7 @@ namespace GymFeesManagement.IServices
 {
     public interface IGymProgramService
     {
-        Task<GymProgram> PostProgram(GymProgram program);
+        Task<GymProgram> PostProgram(ProgramRequestDTO programRequest);
         Task<ICollection<GymProgram>> GetPrograms();
         Task<GymProgram> GetProgram(int id);
         

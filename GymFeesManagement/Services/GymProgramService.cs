@@ -14,8 +14,16 @@ namespace GymFeesManagement.Services
             _gymProgramRepository = gymProgramRepository;
         }
 
-        public async Task<GymProgram> PostProgram(GymProgram program)
+        public async Task<GymProgram> PostProgram(ProgramRequestDTO programRequest)
         {
+            var program = new GymProgram
+            {
+                Name = programRequest.Name,
+                Description = programRequest.Description,
+                Programstatus = programRequest.Programstatus
+                
+            };
+
             return await _gymProgramRepository.PostProgram(program);
         }
 

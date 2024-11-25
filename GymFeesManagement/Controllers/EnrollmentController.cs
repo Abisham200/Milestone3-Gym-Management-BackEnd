@@ -29,5 +29,32 @@ namespace GymFeesManagement.Controllers
             return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet("GetAllEnrolls")]
+        public async Task<IActionResult> GetAllEnroll()
+        {
+            try {
+                var data = await _enrollmentService.GetAllEnroll();
+                return Ok(data);
+            }
+            catch (Exception ex) 
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("GetAllEnrollByMember/{id}")]
+        public async Task<IActionResult> EnrollmentByMember(int id)
+        {
+            try
+            {
+                var data = await _enrollmentService.EnrollmentByMember(id);
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

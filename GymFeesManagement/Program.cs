@@ -32,6 +32,18 @@ namespace GymFeesManagement
             builder.Services.AddScoped<IPaymentService, PaymentService>();
 
 
+            builder.Services.AddCors(opt =>
+            {
+                opt.AddPolicy(
+                    name: "CORSPolicy",
+                    builder =>
+                    {
+                        builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod();
+                    }
+                    );
+            });
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -41,6 +53,7 @@ namespace GymFeesManagement
                 app.UseSwaggerUI();
             }
 
+            app.UseCors("CORSPolicy");
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

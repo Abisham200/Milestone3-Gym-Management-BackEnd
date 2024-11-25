@@ -1,9 +1,11 @@
 ﻿using GymFeesManagement.DTOs.ReqDTO;
+using GymFeesManagement.DTOs.ResDTO;
 using GymFeesManagement.Entities;
 using GymFeesManagement.IRepositories;
 using GymFeesManagement.IServices;
 using GymFeesManagement.Repositories;
 using Microsoft.IdentityModel.Tokens;
+using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -20,7 +22,7 @@ namespace GymFeesManagement.Services
             _configuration = configuration;
         }
 
-        public async Task<List<User>> GetUsers()
+        public async Task<ICollection<User>> GetUsers()
         {
             return await _userRepository.GetUsers();
         }
@@ -49,6 +51,7 @@ namespace GymFeesManagement.Services
             getUser.Height = userRequest.Height;
             getUser.Weight = userRequest.Weight;
             getUser.Address = userRequest.Address;
+            getUser.ProfileImage = userRequest.ProfileImage;
             getUser.Role = userRequest.Role;
 
             var check = await _userRepository.UpdateUser(getUser);
@@ -66,6 +69,7 @@ namespace GymFeesManagement.Services
                 Height = check.Height,
                 Weight = check.Weight,
                 Address = check.Address,
+                ProfileImage = check.ProfileImage,
                 Role = check.Role,
 
             };
@@ -92,6 +96,7 @@ namespace GymFeesManagement.Services
                 CreationDate = DateTime.Now,
                 MemberStatus = true,
                 Age = userRequest.Age,
+                ProfileImage = userRequest.ProfileImage,
                 Gender = userRequest.Gender,
                 Height = userRequest.Height,
                 Weight = userRequest.Weight,
@@ -146,6 +151,26 @@ namespace GymFeesManagement.Services
                 Token = new JwtSecurityTokenHandler().WriteToken(token)
             };
             return response;
+        }
+
+        public async Task<ICollection<RoleResponse>> GetRoles()
+        {
+            var dict = new Dictionary<int, string>();
+            foreach (var name in Enum.GetNames(typeof(UserRoles)))
+            {
+                dict.Add((int)Enum.Parse(typeof(UserRoles), name), name);
+            }
+            var roles = new List<RoleResponse>();
+            foreach (var item in dict)
+            {
+                var role = new RoleResponse
+                {
+                    Key = item.Key,
+                    Value = item.Value
+                };
+                roles.Add(role);
+            }
+            return roles;
         }
     }
 }

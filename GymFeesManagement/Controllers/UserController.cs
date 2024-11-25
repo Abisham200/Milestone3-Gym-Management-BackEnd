@@ -125,5 +125,11 @@ namespace GymFeesManagement.Controllers
             }
         }
 
+        [HttpGet("Get-Roles")]
+        public async Task<IActionResult> GetRoles()
+        {
+            var data = await _userService.GetRoles();
+            return Ok(data);
+        }
     }
 }

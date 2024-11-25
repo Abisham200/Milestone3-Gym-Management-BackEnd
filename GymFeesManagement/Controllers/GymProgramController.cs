@@ -35,7 +35,7 @@ namespace GymFeesManagement.Controllers
 
         // GET: api/Programs/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<GymProgram>> GetProgram(int id)
+        public async Task<IActionResult> GetProgram(int id)
         {
             try
             {
@@ -69,11 +69,11 @@ namespace GymFeesManagement.Controllers
         // POST: api/Programs
 
         [HttpPost]
-        public async Task<IActionResult> PostProgram(GymProgram program)
+        public async Task<IActionResult> PostProgram(ProgramRequestDTO programRequest)
         {
             try 
             {
-                var data = await _gymProgramService.PostProgram(program);
+                var data = await _gymProgramService.PostProgram(programRequest);
                 return Ok(data);
             }
             catch (Exception ex)

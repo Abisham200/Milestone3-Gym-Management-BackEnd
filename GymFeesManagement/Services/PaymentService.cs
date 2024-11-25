@@ -2,6 +2,7 @@
 using GymFeesManagement.Entities;
 using GymFeesManagement.IRepositories;
 using GymFeesManagement.IServices;
+using GymFeesManagement.Repositories;
 
 namespace GymFeesManagement.Services
 {
@@ -25,6 +26,16 @@ namespace GymFeesManagement.Services
 
             return await _paymentRepository.AddPayment(payment);
 
+        }
+
+        public async Task<ICollection<Payment>> GetAllPayment()
+        {
+            return await _paymentRepository.GetAllPayment();
+        }
+
+        public async Task<Payment> PaymentByEnrollId(int id)
+        {
+            return await _paymentRepository.PaymentByEnrollId(id);
         }
     }
    

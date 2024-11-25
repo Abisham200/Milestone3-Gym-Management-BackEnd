@@ -18,6 +18,7 @@ namespace GymFeesManagement.DTOs.ReqDTO
         public decimal? Height { get; set; }
         public decimal? Weight { get; set; }
         public string? Address { get; set; }
+        public string? ProfileImage { get; set; }
         public UserRoles Role { get; set; }
     }
 }
