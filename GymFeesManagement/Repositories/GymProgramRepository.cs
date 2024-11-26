@@ -14,12 +14,19 @@ namespace GymFeesManagement.Repositories
             _appDbContext = appDbContext;
         }
 
-        public async Task<GymProgram> PostProgram(GymProgram program)
+       public async Task<GymFeesManagement.Entities.GymProgram>NewProgram(GymFeesManagement.Entities.GymProgram program)
         {
-            var data = await _appDbContext.Programs.AddAsync(program);
-            await _appDbContext.SaveChangesAsync();
-
-            return data.Entity;
+            try
+            {
+                var data = await _appDbContext.Programs.AddAsync(program);
+                await _appDbContext.SaveChangesAsync();
+               
+                return data.Entity;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public async Task<GymProgram> GetProgram(int id)

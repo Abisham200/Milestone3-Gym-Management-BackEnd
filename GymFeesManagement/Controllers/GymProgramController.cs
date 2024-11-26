@@ -74,7 +74,7 @@ namespace GymFeesManagement.Controllers
             try 
             {
                 var data = await _gymProgramService.PostProgram(programRequest);
-                return Ok(data);
+                return Ok();
             }
             catch (Exception ex)
             {

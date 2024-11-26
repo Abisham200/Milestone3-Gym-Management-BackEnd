@@ -21,7 +21,8 @@ namespace GymFeesManagement.Services
             {
                 Amount = paymentRequest.Amount,
                 Date = paymentRequest.Date,
-                EntrollmentId = paymentRequest.EntrollmentId
+                EntrollmentId = paymentRequest.EntrollmentId,
+                
             };
 
             return await _paymentRepository.AddPayment(payment);

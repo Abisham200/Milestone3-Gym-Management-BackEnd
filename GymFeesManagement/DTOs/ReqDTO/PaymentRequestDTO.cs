@@ -7,5 +7,6 @@ namespace GymFeesManagement.DTOs.ReqDTO
         public string Amount { get; set; }
         public DateTime Date { get; set; }
         public int EntrollmentId { get; set; }
+       
     }
 }

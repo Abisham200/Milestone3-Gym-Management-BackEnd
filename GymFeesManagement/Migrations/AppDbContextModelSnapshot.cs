@@ -70,6 +70,9 @@ namespace GymFeesManagement.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("PricePerMonth")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<bool>("Programstatus")
                         .HasColumnType("bit");
 

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GymFeesManagement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241120100840_Check5")]
-    partial class Check5
+    [Migration("20241125124111_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -72,6 +72,9 @@ namespace GymFeesManagement.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("PricePerMonth")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<bool>("Programstatus")
                         .HasColumnType("bit");

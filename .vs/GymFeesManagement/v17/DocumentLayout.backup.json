@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\dtos\\reqdto\\programrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\dtos\\reqdto\\programrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\controllers\\gymprogramcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\controllers\\gymprogramcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\entities\\gymprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\entities\\gymprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\migrations\\20241125124111_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\migrations\\20241125124111_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\dtos\\reqdto\\programrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\dtos\\reqdto\\programrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\dtos\\resdto\\programresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,24 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GymProgramController.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Controllers\\GymProgramController.cs",
-              "RelativeDocumentMoniker": "GymFeesManagement\\Controllers\\GymProgramController.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Controllers\\GymProgramController.cs",
-              "RelativeToolTip": "GymFeesManagement\\Controllers\\GymProgramController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAkwEcAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T18:12:11.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "20241125124111_initial.cs",
               "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Migrations\\20241125124111_initial.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\Migrations\\20241125124111_initial.cs",
@@ -60,20 +43,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ProgramRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\DTOs\\ReqDTO\\ProgramRequestDTO.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\DTOs\\ReqDTO\\ProgramRequestDTO.cs",
               "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\DTOs\\ReqDTO\\ProgramRequestDTO.cs",
               "RelativeToolTip": "GymFeesManagement\\DTOs\\ReqDTO\\ProgramRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T12:39:48.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T12:39:48.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ProgramResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\DTOs\\ResDTO\\ProgramResponseDTO.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\DTOs\\ResDTO\\ProgramResponseDTO.cs",
@@ -85,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GymProgram.cs",
               "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Entities\\GymProgram.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\Entities\\GymProgram.cs",
