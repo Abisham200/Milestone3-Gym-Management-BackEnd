@@ -13,6 +13,8 @@ namespace GymFeesManagement.Entities
         public string Description { get; set; }
         public bool Programstatus { get; set; }
         public DateTime CreatedDate { get; set; }
+        public List<Entrollment> Entrollments { get; set; }
+
 
     }
 }

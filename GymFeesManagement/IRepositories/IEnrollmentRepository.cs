@@ -4,8 +4,8 @@ namespace GymFeesManagement.IRepositories
 {
     public interface IEnrollmentRepository
     {
-        Task<Entrollment> AddEnroll(Entrollment entrollment);
+        Task<List<Entrollment>> AddEnroll(List<Entrollment> enrollments);
         Task<ICollection<Entrollment>> GetAllEnroll();
-        Task<Entrollment> EnrollmentByMember(int id);
+        Task<List<Entrollment>> EnrollmentByMember(int id);
     }
 }

@@ -13,28 +13,23 @@ namespace GymFeesManagement.Repositories
             _appDbContext = appDbContext;
         }
 
-        public async Task<Entrollment> AddEnroll(Entrollment entrollment)
+        public async Task<List<Entrollment>> AddEnroll(List<Entrollment> enrollments)
         {
-            var data = await _appDbContext.Entrollments.AddAsync(entrollment);
+             await _appDbContext.Entrollments.AddRangeAsync(enrollments);
             await _appDbContext.SaveChangesAsync();
 
-            return data.Entity;
+            return enrollments;
         }
 
         public async Task<ICollection<Entrollment>> GetAllEnroll()
         { 
-          return await _appDbContext.Entrollments.ToListAsync();
+          return await _appDbContext.Entrollments.Include(e => e.user).ToListAsync();
         }
 
-        public async Task<Entrollment> EnrollmentByMember(int id)
+        public async Task<List<Entrollment>> EnrollmentByMember(int id)
         { 
-        var enroll = await _appDbContext.Entrollments.SingleOrDefaultAsync(d => d.UserId == id );
-            if (enroll == null)
-            {
-                throw new Exception();
-            }
-
-            return enroll;
+            var data = await _appDbContext.Entrollments.Where(e => e.UserId == id).ToListAsync();   
+            return data;
         }
     }
 }

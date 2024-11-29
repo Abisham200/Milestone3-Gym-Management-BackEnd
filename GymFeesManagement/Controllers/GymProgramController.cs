@@ -71,15 +71,11 @@ namespace GymFeesManagement.Controllers
         [HttpPost]
         public async Task<IActionResult> PostProgram(ProgramRequestDTO programRequest)
         {
-            try 
-            {
+           
                 var data = await _gymProgramService.PostProgram(programRequest);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+                return Ok(data);
+            
+            
 
 
         }

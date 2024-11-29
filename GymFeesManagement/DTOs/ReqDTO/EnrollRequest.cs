@@ -6,9 +6,9 @@ namespace GymFeesManagement.DTOs.ReqDTO
     {
        
         public int UserId { get; set; }
-        public int ProgramId { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime DueDate { get; set; }
+        public List<int> Programs { get; set; }
+      //  public DateTime CreatedDate { get; set; }
+      //  public DateTime DueDate { get; set; }
         
     }
 }

@@ -15,17 +15,26 @@ namespace GymFeesManagement.Services
             _enrollmentRepository = enrollmentRepository;
         }
 
-        public async Task<Entrollment> AddEnroll(EnrollRequest enrollRequest)
+        public async Task<List<Entrollment>> AddEnroll(EnrollRequest enrollRequest)
         {
-            var enroll = new Entrollment
+            var enrollments = new List<Entrollment>();  
+            foreach (var programId in enrollRequest.Programs)
             {
-               UserId = enrollRequest.UserId,
-               ProgramId = enrollRequest.ProgramId,
-               CreatedDate = enrollRequest.CreatedDate,
-               DueDate = enrollRequest.DueDate,
-            };
+                var enroll = new Entrollment
+                {
+                    UserId = enrollRequest.UserId,
+                    ProgramId = programId,
+                    CreatedDate = DateTime.Now,
 
-            return await _enrollmentRepository.AddEnroll(enroll);
+                };
+                enroll.DueDate = enroll.CreatedDate.AddDays(30);
+                enrollments.Add(enroll);    
+            }
+         
+            
+
+            var data = await _enrollmentRepository.AddEnroll(enrollments);
+            return data;
 
         }
 
@@ -34,7 +43,7 @@ namespace GymFeesManagement.Services
             return await _enrollmentRepository.GetAllEnroll();
             }
 
-        public async Task<Entrollment> EnrollmentByMember(int id)
+        public async Task<List<Entrollment>> EnrollmentByMember(int id)
         {
             return await _enrollmentRepository.EnrollmentByMember(id);
         }

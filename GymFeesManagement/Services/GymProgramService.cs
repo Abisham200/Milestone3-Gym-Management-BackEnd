@@ -16,23 +16,19 @@ namespace GymFeesManagement.Services
 
         public async Task<GymProgram> PostProgram(ProgramRequestDTO programRequest)
         {
-            try
-            {
+           
                 var response = new GymProgram
                 {
                     Name = programRequest.Name,
                     Description = programRequest.Description,
-                    Programstatus = programRequest.Programstatus,
-                    CreatedDate = programRequest.CreatedDate
+                    Programstatus = programRequest.ProgramStatus,
+                    CreatedDate = programRequest.CreatedDate,
+                    PricePerMonth = programRequest.PricePerMonth,
                    
                 };
                 var data = await _gymProgramRepository.NewProgram(response);
                 return data;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+           
 
         }
 
@@ -58,7 +54,8 @@ namespace GymFeesManagement.Services
 
             getProgram.Name = programDTO.Name;
             getProgram.Description = programDTO.Description;
-            getProgram.Programstatus = programDTO.Programstatus;
+            getProgram.Programstatus = programDTO.ProgramStatus;
+            getProgram.PricePerMonth = programDTO.PricePerMonth;
            
 
             var check = await _gymProgramRepository.UpdateProgram(getProgram);
