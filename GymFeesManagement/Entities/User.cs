@@ -27,9 +27,10 @@ namespace GymFeesManagement.Entities
         public string? Address { get; set; }
         public string? ProfileImage { get; set; }
         public UserRoles Role { get; set; }
+        public List<Entrollment> Entrollments { get; set; }
 
-    
-   
+
+
     }
 
     public enum UserRoles

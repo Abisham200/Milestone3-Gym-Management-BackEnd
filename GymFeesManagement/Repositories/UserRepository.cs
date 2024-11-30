@@ -21,7 +21,7 @@ namespace GymFeesManagement.Repositories
 
         public async Task<User> GetUser(int id)
         {
-            var user = await _appDbContext.Users.SingleOrDefaultAsync(u => u.Id == id);
+            var user = await _appDbContext.Users.Include(u => u.Entrollments).ThenInclude(u => u.Program).SingleOrDefaultAsync(u => u.Id == id);
 
             if (user == null)
             {

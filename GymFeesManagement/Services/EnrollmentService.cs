@@ -43,9 +43,17 @@ namespace GymFeesManagement.Services
             return await _enrollmentRepository.GetAllEnroll();
             }
 
+
+
         public async Task<List<Entrollment>> EnrollmentByMember(int id)
         {
             return await _enrollmentRepository.EnrollmentByMember(id);
+        }
+
+
+        public async Task<string> DeleteEnroll(int id)
+        {
+            return await _enrollmentRepository.DeleteEnroll(id);
         }
     }
 }

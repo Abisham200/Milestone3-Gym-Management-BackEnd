@@ -1,5 +1,6 @@
 ﻿using GymFeesManagement.DTOs.ReqDTO;
 using GymFeesManagement.IServices;
+using GymFeesManagement.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -56,5 +57,20 @@ namespace GymFeesManagement.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpDelete("DeleteEnroll/{id}")]
+        public async Task<IActionResult> DeleteEnroll(int id)
+        {
+            try
+            {
+                var data = await _enrollmentService.DeleteEnroll(id);
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }

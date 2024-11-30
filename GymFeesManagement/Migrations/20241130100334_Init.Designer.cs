@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GymFeesManagement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241125124111_initial")]
-    partial class initial
+    [Migration("20241130100334_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -226,13 +226,13 @@ namespace GymFeesManagement.Migrations
             modelBuilder.Entity("GymFeesManagement.Entities.Entrollment", b =>
                 {
                     b.HasOne("GymFeesManagement.Entities.GymProgram", "Program")
-                        .WithMany()
+                        .WithMany("Entrollments")
                         .HasForeignKey("ProgramId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("GymFeesManagement.Entities.User", "user")
-                        .WithMany()
+                        .WithMany("Entrollments")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -278,6 +278,16 @@ namespace GymFeesManagement.Migrations
             modelBuilder.Entity("GymFeesManagement.Entities.Entrollment", b =>
                 {
                     b.Navigation("Payment");
+                });
+
+            modelBuilder.Entity("GymFeesManagement.Entities.GymProgram", b =>
+                {
+                    b.Navigation("Entrollments");
+                });
+
+            modelBuilder.Entity("GymFeesManagement.Entities.User", b =>
+                {
+                    b.Navigation("Entrollments");
                 });
 #pragma warning restore 612, 618
         }

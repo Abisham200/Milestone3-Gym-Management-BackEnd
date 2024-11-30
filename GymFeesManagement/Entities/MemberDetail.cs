@@ -26,7 +26,7 @@ namespace GymFeesManagement.Entities
         public bool? MemberStatus { get; set; }
         public string? Address { get; set; }
         public string? ProfileImage { get; set; }
-        public List<Entrollment> Entrollments { get; set; }
+       
        
 
     }

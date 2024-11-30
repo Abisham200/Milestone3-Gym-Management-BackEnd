@@ -36,9 +36,6 @@ namespace GymFeesManagement.Migrations
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("GymProgramId")
-                        .HasColumnType("int");
-
                     b.Property<int>("ProgramId")
                         .HasColumnType("int");
 
@@ -47,7 +44,7 @@ namespace GymFeesManagement.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("GymProgramId");
+                    b.HasIndex("ProgramId");
 
                     b.HasIndex("UserId");
 
@@ -225,15 +222,19 @@ namespace GymFeesManagement.Migrations
 
             modelBuilder.Entity("GymFeesManagement.Entities.Entrollment", b =>
                 {
-                    b.HasOne("GymFeesManagement.Entities.GymProgram", null)
+                    b.HasOne("GymFeesManagement.Entities.GymProgram", "Program")
                         .WithMany("Entrollments")
-                        .HasForeignKey("GymProgramId");
+                        .HasForeignKey("ProgramId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("GymFeesManagement.Entities.User", "user")
-                        .WithMany()
+                        .WithMany("Entrollments")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Program");
 
                     b.Navigation("user");
                 });
@@ -277,6 +278,11 @@ namespace GymFeesManagement.Migrations
                 });
 
             modelBuilder.Entity("GymFeesManagement.Entities.GymProgram", b =>
+                {
+                    b.Navigation("Entrollments");
+                });
+
+            modelBuilder.Entity("GymFeesManagement.Entities.User", b =>
                 {
                     b.Navigation("Entrollments");
                 });

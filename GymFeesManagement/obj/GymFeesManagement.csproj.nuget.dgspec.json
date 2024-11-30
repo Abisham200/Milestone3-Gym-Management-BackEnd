@@ -10,11 +10,11 @@
         "projectUniqueName": "X:\\___milestone-3 New\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
         "projectName": "GymFeesManagement",
         "projectPath": "X:\\___milestone-3 New\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
-        "packagesPath": "C:\\Users\\ut03304\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\UT03304\\.nuget\\packages\\",
         "outputPath": "X:\\___milestone-3 New\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ut03304\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UT03304\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
