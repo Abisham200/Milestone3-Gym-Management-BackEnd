@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "GymFeesManagement.Controllers.EnrollmentController",
+    "Method": "DeleteEnroll",
+    "RelativePath": "api/Enrollment/DeleteEnroll/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymFeesManagement.Controllers.EnrollmentController",
     "Method": "EnrollmentByMember",
     "RelativePath": "api/Enrollment/GetAllEnrollByMember/{id}",
     "HttpMethod": "GET",

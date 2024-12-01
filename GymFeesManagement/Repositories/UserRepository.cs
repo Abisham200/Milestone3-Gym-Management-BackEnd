@@ -16,7 +16,7 @@ namespace GymFeesManagement.Repositories
 
         public async Task<ICollection<User>> GetUsers()
         {
-            return await _appDbContext.Users.ToListAsync();
+            return await _appDbContext.Users.Include(u => u.Entrollments).ThenInclude(e => e.Program).ToListAsync();
         }
 
         public async Task<User> GetUser(int id)

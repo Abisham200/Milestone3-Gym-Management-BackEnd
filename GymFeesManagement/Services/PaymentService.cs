@@ -20,7 +20,7 @@ namespace GymFeesManagement.Services
             var payment = new Payment
             {
                 Amount = paymentRequest.Amount,
-                Date = paymentRequest.Date,
+                Date = DateTime.Now,
                 EntrollmentId = paymentRequest.EntrollmentId,
                 
             };
