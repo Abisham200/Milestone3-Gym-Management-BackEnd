@@ -60,6 +60,7 @@ namespace GymFeesManagement
             }
 
             app.UseCors("CORSPolicy");
+
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

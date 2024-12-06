@@ -24,11 +24,11 @@ namespace GymFeesManagement.Controllers
         }
 
         [HttpGet("GetUsers")]
-        public async Task<IActionResult> GetUsers()
+        public async Task<IActionResult> GetUsers(UserRoles? role)
         {
             try
             {
-                var data = await _userService.GetUsers();
+                var data = await _userService.GetUsers(role);
                 return Ok(data);
             }
             catch (Exception ex)

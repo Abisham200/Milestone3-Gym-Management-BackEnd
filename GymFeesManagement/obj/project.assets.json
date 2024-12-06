@@ -4204,19 +4204,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zaxsa\\.nuget\\packages\\": {}
+    "C:\\Users\\UT03304\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
+      "projectUniqueName": "X:\\___2-12\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
       "projectName": "GymFeesManagement",
-      "projectPath": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
-      "packagesPath": "C:\\Users\\zaxsa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\obj\\",
+      "projectPath": "X:\\___2-12\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
+      "packagesPath": "C:\\Users\\UT03304\\.nuget\\packages\\",
+      "outputPath": "X:\\___2-12\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\zaxsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\UT03304\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4294,7 +4294,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

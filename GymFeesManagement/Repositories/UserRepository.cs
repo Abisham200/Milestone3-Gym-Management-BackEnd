@@ -14,9 +14,9 @@ namespace GymFeesManagement.Repositories
         _appDbContext = appDbContext;
         }
 
-        public async Task<ICollection<User>> GetUsers()
+        public async Task<ICollection<User>> GetUsers(UserRoles?role)
         {
-            return await _appDbContext.Users.Include(u => u.Entrollments).ThenInclude(e => e.Program).ToListAsync();
+            return await _appDbContext.Users.Where(u => u.Role == role).Include(u => u.Entrollments).ThenInclude(e => e.Program).ToListAsync();
         }
 
         public async Task<User> GetUser(int id)

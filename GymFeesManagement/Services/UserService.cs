@@ -22,9 +22,9 @@ namespace GymFeesManagement.Services
             _configuration = configuration;
         }
 
-        public async Task<ICollection<User>> GetUsers()
+        public async Task<ICollection<User>> GetUsers(UserRoles? role)
         {
-            return await _userRepository.GetUsers();
+            return await _userRepository.GetUsers(role);
         }
 
         public async Task<User> GetUser(int id)

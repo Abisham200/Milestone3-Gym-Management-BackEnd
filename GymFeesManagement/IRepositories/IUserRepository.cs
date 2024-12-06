@@ -4,7 +4,7 @@ namespace GymFeesManagement.IRepositories
 {
     public interface IUserRepository
     {
-        Task<ICollection<User>> GetUsers();
+        Task<ICollection<User>> GetUsers(UserRoles? role);
         Task<User> GetUser(int id);
         Task<User> UpdateUser(User user);
         Task<User> Register(User user);

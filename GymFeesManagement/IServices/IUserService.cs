@@ -6,7 +6,7 @@ namespace GymFeesManagement.IServices
 {
     public interface IUserService
     {
-        Task<ICollection<User>> GetUsers();
+        Task<ICollection<User>> GetUsers(UserRoles? role);
         Task<User> GetUser(int id);
         Task<User> GetUserByEmail(string email);
         Task<User> UpdateUser(int id, UserRequest userRequest);
