@@ -1,4 +1,5 @@
 ﻿using GymFeesManagement.DTOs.ReqDTO;
+using GymFeesManagement.Entities;
 using GymFeesManagement.IServices;
 using GymFeesManagement.Services;
 using Microsoft.AspNetCore.Http;
@@ -72,5 +73,20 @@ namespace GymFeesManagement.Controllers
             }
         }
 
+        [HttpGet("GetAllDueEntrollment/")]
+
+        public async Task<IActionResult> GetAllDueEnroll()
+        {
+            try
+            {
+                var data = await _enrollmentService.GetAllDueEnroll();
+                return Ok(data);
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

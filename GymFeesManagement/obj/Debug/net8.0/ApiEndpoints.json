@@ -33,6 +33,16 @@
   },
   {
     "ContainingType": "GymFeesManagement.Controllers.EnrollmentController",
+    "Method": "GetAllDueEnroll",
+    "RelativePath": "api/Enrollment/GetAllDueEntrollment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymFeesManagement.Controllers.EnrollmentController",
     "Method": "EnrollmentByMember",
     "RelativePath": "api/Enrollment/GetAllEnrollByMember/{id}",
     "HttpMethod": "GET",
@@ -243,7 +253,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

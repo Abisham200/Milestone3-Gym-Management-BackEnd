@@ -8,5 +8,6 @@ namespace GymFeesManagement.IRepositories
         Task<ICollection<Entrollment>> GetAllEnroll();
         Task<List<Entrollment>> EnrollmentByMember(int id);
         Task<string> DeleteEnroll(int id);
+        Task<ICollection<Entrollment>> GetAllDueEnroll();
     }
 }

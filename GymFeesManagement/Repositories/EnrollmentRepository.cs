@@ -26,6 +26,14 @@ namespace GymFeesManagement.Repositories
           return await _appDbContext.Entrollments.Include(e => e.user).Include(e => e.Program).ToListAsync();
         }
 
+        public async Task<ICollection<Entrollment>> GetAllDueEnroll()
+        {
+            var today = DateTime.Now.Date;
+            var enrollments = await _appDbContext.Entrollments
+                .Where(e => e.DueDate < today.AddDays(1) && e.DueDate >= today)
+                .ToListAsync();
+            return enrollments;
+        }
         public async Task<List<Entrollment>> EnrollmentByMember(int id)
         { 
             var data = await _appDbContext.Entrollments.Where(e => e.UserId == id).ToListAsync();   

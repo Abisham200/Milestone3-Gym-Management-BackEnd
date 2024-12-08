@@ -35,8 +35,9 @@ namespace GymFeesManagement.Entities
 
     public enum UserRoles
     {
-        Admin,
-        Member
+        Member,
+        Admin
+        
     }
     public enum Gender
     {

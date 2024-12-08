@@ -17,7 +17,7 @@ namespace GymFeesManagement.Services
 
         public async Task<List<Entrollment>> AddEnroll(EnrollRequest enrollRequest)
         {
-            var enrollments = new List<Entrollment>();  
+            var enrollments = new List<Entrollment>();
             foreach (var programId in enrollRequest.Programs)
             {
                 var enroll = new Entrollment
@@ -28,10 +28,10 @@ namespace GymFeesManagement.Services
 
                 };
                 enroll.DueDate = enroll.CreatedDate.AddDays(30);
-                enrollments.Add(enroll);    
+                enrollments.Add(enroll);
             }
-         
-            
+
+
 
             var data = await _enrollmentRepository.AddEnroll(enrollments);
             return data;
@@ -39,9 +39,9 @@ namespace GymFeesManagement.Services
         }
 
         public async Task<ICollection<Entrollment>> GetAllEnroll()
-            { 
+        {
             return await _enrollmentRepository.GetAllEnroll();
-            }
+        }
 
 
 
@@ -54,6 +54,10 @@ namespace GymFeesManagement.Services
         public async Task<string> DeleteEnroll(int id)
         {
             return await _enrollmentRepository.DeleteEnroll(id);
+        }
+
+        public async Task<ICollection<Entrollment>> GetAllDueEnroll(){
+            return await _enrollmentRepository.GetAllDueEnroll();
         }
     }
 }
