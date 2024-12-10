@@ -1,4 +1,5 @@
-﻿using GymFeesManagement.Entities;
+﻿using GymFeesManagement.DTOs.ResDTO;
+using GymFeesManagement.Entities;
 
 namespace GymFeesManagement.IRepositories
 {
@@ -8,7 +9,7 @@ namespace GymFeesManagement.IRepositories
         Task<GymProgram> GetProgram(int id);
         Task<ICollection<GymProgram>> GetPrograms();
         Task<GymProgram> UpdateProgram(GymProgram Program);
-        Task<string> DeleteProgram(int id);
+        Task<Message> DeleteProgram(int id);
 
     }
 }

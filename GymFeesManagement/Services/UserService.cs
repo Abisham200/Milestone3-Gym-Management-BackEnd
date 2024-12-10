@@ -76,7 +76,7 @@ namespace GymFeesManagement.Services
              return user;
         }
 
-        public async Task<string> DeleteUser(int id)
+        public async Task<Message> DeleteUser(int id)
         {
             return await _userRepository.DeleteUser(id);
         }

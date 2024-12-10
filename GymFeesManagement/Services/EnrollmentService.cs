@@ -1,5 +1,6 @@
 ﻿using GymFeesManagement.Database;
 using GymFeesManagement.DTOs.ReqDTO;
+using GymFeesManagement.DTOs.ResDTO;
 using GymFeesManagement.Entities;
 using GymFeesManagement.IRepositories;
 using GymFeesManagement.IServices;
@@ -51,7 +52,7 @@ namespace GymFeesManagement.Services
         }
 
 
-        public async Task<string> DeleteEnroll(int id)
+        public async Task<Message> DeleteEnroll(int id)
         {
             return await _enrollmentRepository.DeleteEnroll(id);
         }

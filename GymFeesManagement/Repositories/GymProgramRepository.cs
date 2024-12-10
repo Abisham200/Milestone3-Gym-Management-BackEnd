@@ -1,4 +1,5 @@
 ﻿using GymFeesManagement.Database;
+using GymFeesManagement.DTOs.ResDTO;
 using GymFeesManagement.Entities;
 using GymFeesManagement.IRepositories;
 using Microsoft.EntityFrameworkCore;
@@ -58,7 +59,7 @@ namespace GymFeesManagement.Repositories
             return data.Entity;
         }
 
-        public async Task<string> DeleteProgram(int id)
+        public async Task<Message> DeleteProgram(int id)
         {
             var program = await _appDbContext.Programs.FindAsync(id);
             if (program == null)
@@ -69,7 +70,12 @@ namespace GymFeesManagement.Repositories
             _appDbContext.Programs.Remove(program);
             await _appDbContext.SaveChangesAsync();
 
-            return "Program Successfully Deleted...";
+            var message = new Message
+            {
+                text = "Program Successfully Deleted..."
+            };
+
+            return message;
         }
 
        

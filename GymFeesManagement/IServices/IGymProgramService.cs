@@ -11,7 +11,7 @@ namespace GymFeesManagement.IServices
         Task<GymProgram> GetProgram(int id);
         
         Task<ProgramResponseDTO> UpdateProgram(ProgramRequestDTO programDTO, int id);
-        Task<string> DeleteProgram(int id);
+        Task<Message> DeleteProgram(int id);
 
     }    
 }

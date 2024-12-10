@@ -1,4 +1,6 @@
 ﻿using GymFeesManagement.Database;
+using GymFeesManagement.DTOs.ReqDTO;
+using GymFeesManagement.DTOs.ResDTO;
 using GymFeesManagement.Entities;
 using GymFeesManagement.IRepositories;
 using Microsoft.EntityFrameworkCore;
@@ -59,7 +61,7 @@ namespace GymFeesManagement.Repositories
             return data.Entity;
         }
 
-        public async Task<string> DeleteUser(int id)
+        public async Task<Message> DeleteUser(int id)
         {
             var user = await _appDbContext.Users.FindAsync(id);
             if (user == null)
@@ -70,7 +72,12 @@ namespace GymFeesManagement.Repositories
             _appDbContext.Users.Remove(user);
             await _appDbContext.SaveChangesAsync();
 
-            return "User Successfully Deleted...";
+            var message = new Message
+            {
+                text = "User Successfully Deleted..."
+            };
+
+            return message;
         }
 
         public async Task<List<User>> GetRoles(UserRoles? role)

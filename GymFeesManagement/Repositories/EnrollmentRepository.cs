@@ -1,4 +1,6 @@
 ﻿using GymFeesManagement.Database;
+using GymFeesManagement.DTOs.ReqDTO;
+using GymFeesManagement.DTOs.ResDTO;
 using GymFeesManagement.Entities;
 using GymFeesManagement.IRepositories;
 using Microsoft.EntityFrameworkCore;
@@ -40,7 +42,7 @@ namespace GymFeesManagement.Repositories
             return data;
         }
 
-        public async Task<string> DeleteEnroll(int id)
+        public async Task<Message> DeleteEnroll(int id)
         {
             var enroll = await _appDbContext.Entrollments.FindAsync(id);
             if (enroll == null)
@@ -50,8 +52,12 @@ namespace GymFeesManagement.Repositories
 
             _appDbContext.Entrollments.Remove(enroll);
             await _appDbContext.SaveChangesAsync();
+            var messa = new Message
+            {
+                text = "Enrollment SuccesFully Deleted"
+            };
 
-            return "Enrollment Successfully Deleted...";
+            return messa;
         }
     }
 }

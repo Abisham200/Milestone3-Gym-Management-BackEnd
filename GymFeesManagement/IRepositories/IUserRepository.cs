@@ -1,4 +1,5 @@
-﻿using GymFeesManagement.Entities;
+﻿using GymFeesManagement.DTOs.ResDTO;
+using GymFeesManagement.Entities;
 
 namespace GymFeesManagement.IRepositories
 {
@@ -8,7 +9,7 @@ namespace GymFeesManagement.IRepositories
         Task<User> GetUser(int id);
         Task<User> UpdateUser(User user);
         Task<User> Register(User user);
-        Task<string> DeleteUser(int id);
+        Task<Message> DeleteUser(int id);
         Task<User> GetUserByEmail(string email);
         Task<List<User>> GetRoles(UserRoles? role);
     }

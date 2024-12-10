@@ -71,7 +71,7 @@ namespace GymFeesManagement.Services
         }
 
 
-        public async Task<string> DeleteProgram(int id)
+        public async Task<Message> DeleteProgram(int id)
         {
             return await _gymProgramRepository.DeleteProgram(id);
         }
