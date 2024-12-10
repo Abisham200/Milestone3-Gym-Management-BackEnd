@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\",
+  "WorkspaceRootPath": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\repositories\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\repositories\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\repositories\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\iservices\\ienrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\iservices\\ienrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\iservices\\ienrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\services\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\services\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\services\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\irepositories\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\irepositories\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\irepositories\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -40,11 +40,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Entities\\User.cs",
+              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Entities\\User.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Entities\\User.cs*",
-              "RelativeToolTip": "GymFeesManagement\\Entities\\User.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA1wCYAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Entities\\User.cs",
+              "RelativeToolTip": "GymFeesManagement\\Entities\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwCYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T12:27:29.6Z",
               "EditorCaption": ""
@@ -53,66 +53,61 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "EnrollmentController.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Controllers\\EnrollmentController.cs",
+              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Controllers\\EnrollmentController.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\Controllers\\EnrollmentController.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Controllers\\EnrollmentController.cs",
+              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Controllers\\EnrollmentController.cs",
               "RelativeToolTip": "GymFeesManagement\\Controllers\\EnrollmentController.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAowFcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T11:19:36.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T11:19:36.832Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "IEnrollmentService.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IServices\\IEnrollmentService.cs",
+              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IServices\\IEnrollmentService.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\IServices\\IEnrollmentService.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IServices\\IEnrollmentService.cs",
+              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IServices\\IEnrollmentService.cs",
               "RelativeToolTip": "GymFeesManagement\\IServices\\IEnrollmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T11:19:27.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T11:19:27.653Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "EnrollmentService.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Services\\EnrollmentService.cs",
+              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Services\\EnrollmentService.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\Services\\EnrollmentService.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Services\\EnrollmentService.cs",
+              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Services\\EnrollmentService.cs",
               "RelativeToolTip": "GymFeesManagement\\Services\\EnrollmentService.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAYwDUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T11:19:26.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T11:19:26.417Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "IEnrollmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IRepositories\\IEnrollmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IRepositories\\IEnrollmentRepository.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\IRepositories\\IEnrollmentRepository.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IRepositories\\IEnrollmentRepository.cs",
+              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IRepositories\\IEnrollmentRepository.cs",
               "RelativeToolTip": "GymFeesManagement\\IRepositories\\IEnrollmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T11:19:21.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T11:19:21.223Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "EnrollmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Repositories\\EnrollmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Repositories\\EnrollmentRepository.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\Repositories\\EnrollmentRepository.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Repositories\\EnrollmentRepository.cs",
+              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Repositories\\EnrollmentRepository.cs",
               "RelativeToolTip": "GymFeesManagement\\Repositories\\EnrollmentRepository.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwCIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T11:10:52.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T11:10:52.928Z"
             }
           ]
         }
