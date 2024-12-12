@@ -1155,3 +1155,9 @@ X:\______________10-12 DEC\Back\Milestone3-Gym-Management-BackEnd\GymFeesManagem
 X:\______________10-12 DEC\Back\Milestone3-Gym-Management-BackEnd\GymFeesManagement\obj\Debug\net8.0\GymFeesManagement.pdb
 X:\______________10-12 DEC\Back\Milestone3-Gym-Management-BackEnd\GymFeesManagement\obj\Debug\net8.0\GymFeesManagement.genruntimeconfig.cache
 X:\______________10-12 DEC\Back\Milestone3-Gym-Management-BackEnd\GymFeesManagement\obj\Debug\net8.0\ref\GymFeesManagement.dll
+X:\______________10-12 DEC\Back\Milestone3-Gym-Management-BackEnd\GymFeesManagement\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+X:\______________10-12 DEC\Back\Milestone3-Gym-Management-BackEnd\GymFeesManagement\bin\Debug\net8.0\MailKit.dll
+X:\______________10-12 DEC\Back\Milestone3-Gym-Management-BackEnd\GymFeesManagement\bin\Debug\net8.0\MimeKit.dll
+X:\______________10-12 DEC\Back\Milestone3-Gym-Management-BackEnd\GymFeesManagement\bin\Debug\net8.0\System.Formats.Asn1.dll
+X:\______________10-12 DEC\Back\Milestone3-Gym-Management-BackEnd\GymFeesManagement\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+X:\______________10-12 DEC\Back\Milestone3-Gym-Management-BackEnd\GymFeesManagement\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

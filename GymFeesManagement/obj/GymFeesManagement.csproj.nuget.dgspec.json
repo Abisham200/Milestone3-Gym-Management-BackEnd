@@ -10,11 +10,11 @@
         "projectUniqueName": "X:\\______________10-12 DEC\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
         "projectName": "GymFeesManagement",
         "projectPath": "X:\\______________10-12 DEC\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
-        "packagesPath": "C:\\Users\\UT03304\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ut03304\\.nuget\\packages\\",
         "outputPath": "X:\\______________10-12 DEC\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\UT03304\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ut03304\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +49,10 @@
             "BCrypt.Net": {
               "target": "Package",
               "version": "[0.1.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.9.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

@@ -27,7 +27,7 @@ namespace GymFeesManagement.Database
         public DbSet<GymProgram> Programs { get; set; }
         public DbSet<SkippedPayment> SkippedPayments { get; set; }
 
-
+        public DbSet<EmailTemplate> EmailTemplates { get; set; }
 
     }
 }

@@ -14,6 +14,6 @@ namespace GymFeesManagement.IServices
         Task<User> Register(UserRequest userRequest);
         Task<TokenModel> LogIn(Login loginData);
 
-        Task<ICollection<RoleResponse>> GetRoles();
+        //Task<ICollection<RoleResponse>> GetRoles();
     }
 }

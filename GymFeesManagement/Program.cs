@@ -1,10 +1,12 @@
 
 using GymFeesManagement.Database;
+using GymFeesManagement.Entities;
 using GymFeesManagement.IRepositories;
 using GymFeesManagement.IServices;
 using GymFeesManagement.Repositories;
 using GymFeesManagement.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System.Text.Json.Serialization;
 
 namespace GymFeesManagement
@@ -26,7 +28,18 @@ namespace GymFeesManagement
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.Configure<EmailConfig>(builder.Configuration.GetSection("EmailConfig"));
+
+            // Register services
+            builder.Services.AddScoped<sendmailService>();
+            builder.Services.AddScoped<SendMailRepository>();
+            builder.Services.AddScoped<EmailServiceProvider>();
+
+
+
             builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
+
+            builder.Services.AddSingleton(sp => sp.GetRequiredService<IOptions<EmailConfig>>().Value);
 
             builder.Services.AddScoped<IGymProgramRepository, GymProgramRepository>();
             builder.Services.AddScoped< IGymProgramService, GymProgramService>();

@@ -1,9 +1,12 @@
 ﻿using GymFeesManagement.DTOs.ReqDTO;
 using GymFeesManagement.DTOs.ResDTO;
 using GymFeesManagement.Entities;
+using GymFeesManagement.Enum;
 using GymFeesManagement.IRepositories;
 using GymFeesManagement.IServices;
+using GymFeesManagement.Migrations;
 using GymFeesManagement.Repositories;
+using MailKit;
 using Microsoft.IdentityModel.Tokens;
 using System.Data;
 using System.IdentityModel.Tokens.Jwt;
@@ -16,10 +19,12 @@ namespace GymFeesManagement.Services
     {
         private readonly IUserRepository _userRepository;
         private readonly IConfiguration _configuration;
-        public UserService(IUserRepository userRepository, IConfiguration configuration)
+        private readonly sendmailService _mailService;
+        public UserService(IUserRepository userRepository, IConfiguration configuration, sendmailService sendmailService)
         {
             _userRepository = userRepository;
             _configuration = configuration;
+            _mailService = sendmailService;
         }
 
         public async Task<ICollection<User>> GetUsers(UserRoles? role)
@@ -104,7 +109,17 @@ namespace GymFeesManagement.Services
 
 
             };
-            return await _userRepository.Register(user);
+                var data = await _userRepository.Register(user);
+            var mail = new SendMailRequest();
+            mail.Email = userRequest.Email;
+            mail.User =data;
+            mail.Name = "Your Password";
+            mail.Otp = userRequest.Password;
+            mail.EmailType = EmailTypes.otp;
+            await _mailService.Sendmail(mail);
+            return data;
+
+
         }
 
         public async Task<TokenModel> LogIn(Login loginData)
@@ -153,24 +168,24 @@ namespace GymFeesManagement.Services
             return response;
         }
 
-        public async Task<ICollection<RoleResponse>> GetRoles()
-        {
-            var dict = new Dictionary<int, string>();
-            foreach (var name in Enum.GetNames(typeof(UserRoles)))
-            {
-                dict.Add((int)Enum.Parse(typeof(UserRoles), name), name);
-            }
-            var roles = new List<RoleResponse>();
-            foreach (var item in dict)
-            {
-                var role = new RoleResponse
-                {
-                    Key = item.Key,
-                    Value = item.Value
-                };
-                roles.Add(role);
-            }
-            return roles;
-        }
+        //public async Task<ICollection<RoleResponse>> GetRoles()
+        //{
+        //    var dict = new Dictionary<int, string>();
+        //    foreach (var name in Enum.GetNames(typeof(UserRoles)))
+        //    {
+        //        dict.Add((int)Enum.Parse(typeof(UserRoles), name), name);
+        //    }
+        //    var roles = new List<RoleResponse>();
+        //    foreach (var item in dict)
+        //    {
+        //        var role = new RoleResponse
+        //        {
+        //            Key = item.Key,
+        //            Value = item.Value
+        //        };
+        //        roles.Add(role);
+        //    }
+        //    return roles;
+        //}
     }
 }
