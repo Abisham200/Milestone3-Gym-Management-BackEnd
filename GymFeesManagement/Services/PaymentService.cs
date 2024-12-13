@@ -38,6 +38,22 @@ namespace GymFeesManagement.Services
         {
             return await _paymentRepository.PaymentByEnrollId(id);
         }
+
+        public async Task<int> GetDuePaymentsCountAsync()
+        {
+            return await _paymentRepository.GetDuePaymentsCountAsync();
+        }
+
+
+        public async Task<decimal> GetTotalAmountPaidAsync()
+        {
+            return await _paymentRepository.GetTotalAmountPaidAsync();
+        }
+
+        public async Task<IEnumerable<object>> GetMonthlyPaymentsAsync()
+        {
+            return await _paymentRepository.GetMonthlyPaymentsAsync();
+        }
     }
    
 }

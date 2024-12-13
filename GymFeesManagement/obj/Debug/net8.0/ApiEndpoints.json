@@ -164,6 +164,26 @@
   },
   {
     "ContainingType": "GymFeesManagement.Controllers.PaymentController",
+    "Method": "GetDuePaymentsCount",
+    "RelativePath": "api/Payment/duePaymentsCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymFeesManagement.Controllers.PaymentController",
     "Method": "GetAllPayments",
     "RelativePath": "api/Payment/GetAllPayments",
     "HttpMethod": "GET",
@@ -189,6 +209,52 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "GymFeesManagement.Controllers.PaymentController",
+    "Method": "GetTotalAmountPaid",
+    "RelativePath": "api/Payment/getTotalPaidAmount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymFeesManagement.Controllers.PaymentController",
+    "Method": "GetMonthlyPayments",
+    "RelativePath": "api/Payment/MonthlyPayments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymFeesManagement.Controllers.SendMailController",
+    "Method": "Sendmail",
+    "RelativePath": "api/SendMail/Send-Mail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sendMailRequest",
+        "Type": "GymFeesManagement.Entities.SendMailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GymFeesManagement.Controllers.UserController",
     "Method": "DeleteUser",
     "RelativePath": "api/User/DeleteUser/{id}",
@@ -202,16 +268,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "GymFeesManagement.Controllers.UserController",
-    "Method": "GetRoles",
-    "RelativePath": "api/User/Get-Roles",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {

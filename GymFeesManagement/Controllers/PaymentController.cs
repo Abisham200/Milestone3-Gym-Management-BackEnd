@@ -61,5 +61,43 @@ namespace GymFeesManagement.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet("duePaymentsCount")]
+        public async Task<ActionResult<int>> GetDuePaymentsCount()
+        {
+            try
+            {
+                var count = await _paymentService.GetDuePaymentsCountAsync();
+                return Ok(count);
+
+            }
+            catch (Exception ex) {
+                return BadRequest(ex.Message);
+            }
+            
+        }
+
+        [HttpGet("getTotalPaidAmount")]
+        public async Task<ActionResult<decimal>> GetTotalAmountPaid()
+        {
+            try
+            {
+                var totalAmountPaid = await _paymentService.GetTotalAmountPaidAsync();
+                return Ok(totalAmountPaid);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        [HttpGet("MonthlyPayments")]
+        public async Task<IActionResult> GetMonthlyPayments()
+        {
+            var monthlyPayments = await _paymentService.GetMonthlyPaymentsAsync();
+            return Ok(monthlyPayments);
+        }
+
     }
 }

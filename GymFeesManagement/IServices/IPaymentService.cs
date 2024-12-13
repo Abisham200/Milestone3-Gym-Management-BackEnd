@@ -8,5 +8,10 @@ namespace GymFeesManagement.IServices
         Task<Payment> AddPayment(PaymentRequestDTO paymentRequest);
         Task<ICollection<Payment>> GetAllPayment();
         Task<Payment> PaymentByEnrollId(int id);
+        Task<int> GetDuePaymentsCountAsync();
+        Task<decimal> GetTotalAmountPaidAsync();
+        Task<IEnumerable<object>> GetMonthlyPaymentsAsync();
+
+
     }
 }

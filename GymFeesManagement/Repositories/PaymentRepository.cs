@@ -37,5 +37,39 @@ namespace GymFeesManagement.Repositories
 
             return payment;
         }
+
+
+        public async Task<int> GetDuePaymentsCountAsync()
+        {
+           
+            var count = await _appDbContext.Payments
+                                      .Where(p => p.Date < DateTime.Now && p.Amount > 0)
+                                      .CountAsync();
+            return count;
+        }
+
+        public async Task<decimal> GetTotalAmountPaidAsync()
+        {
+            return await _appDbContext.Payments
+                .SumAsync(p => p.Amount);
+        }
+
+
+        public async Task<IEnumerable<object>> GetMonthlyPaymentsAsync()
+        {
+            return await _appDbContext.Payments
+                .GroupBy(p => new { p.Date.Year, p.Date.Month })
+                .Select(g => new
+                {
+                    Year = g.Key.Year,
+                    Month = g.Key.Month,
+                    TotalAmount = g.Sum(p => p.Amount)
+                })
+                .OrderBy(p => p.Year)
+                .ThenBy(p => p.Month)
+                .ToListAsync();
+        }
+
+
     }
 }
