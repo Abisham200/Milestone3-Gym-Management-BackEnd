@@ -43,7 +43,7 @@ namespace GymFeesManagement.Repositories
         {
            
             var count = await _appDbContext.Payments
-                                      .Where(p => p.Date < DateTime.Now && p.Amount == 0)
+                                      .Where(p => p.Date < DateTime.Now && p.Amount > 0)
                                       .CountAsync();
             return count;
         }
