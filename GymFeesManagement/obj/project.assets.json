@@ -4424,11 +4424,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
+      "projectUniqueName": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
       "projectName": "GymFeesManagement",
-      "projectPath": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
+      "projectPath": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\GymFeesManagement.csproj",
       "packagesPath": "C:\\Users\\zaxsa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zaxsa\\Desktop\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\obj\\",
+      "outputPath": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zaxsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
