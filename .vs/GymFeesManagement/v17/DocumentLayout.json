@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\",
+  "WorkspaceRootPath": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\________________________conclusion\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\irepositories\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\________________________conclusion\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\irepositories\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\irepositories\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\________________________conclusion\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\________________________conclusion\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\________________________conclusion\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|c:\\users\\zaxsa\\desktop\\gym-fees-management-backend\\milestone3-gym-management-backend\\gymfeesmanagement\\iservices\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|x:\\________________________conclusion\\back\\milestone3-gym-management-backend\\gymfeesmanagement\\iservices\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDF8B36-B6D7-4075-9B43-CFD8F2791A56}|GymFeesManagement\\GymFeesManagement.csproj|solutionrelative:gymfeesmanagement\\iservices\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,15 +34,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Entities\\Payment.cs",
+              "DocumentMoniker": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Entities\\Payment.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\Entities\\Payment.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Entities\\Payment.cs",
+              "ToolTip": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Entities\\Payment.cs",
               "RelativeToolTip": "GymFeesManagement\\Entities\\Payment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -52,11 +56,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PaymentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Repositories\\PaymentRepository.cs",
+              "DocumentMoniker": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Repositories\\PaymentRepository.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\Repositories\\PaymentRepository.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Repositories\\PaymentRepository.cs",
+              "ToolTip": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Repositories\\PaymentRepository.cs",
               "RelativeToolTip": "GymFeesManagement\\Repositories\\PaymentRepository.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAswC0AAABVAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T09:18:31.858Z",
               "EditorCaption": ""
@@ -65,9 +69,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "IPaymentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IRepositories\\IPaymentRepository.cs",
+              "DocumentMoniker": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IRepositories\\IPaymentRepository.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\IRepositories\\IPaymentRepository.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IRepositories\\IPaymentRepository.cs",
+              "ToolTip": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IRepositories\\IPaymentRepository.cs",
               "RelativeToolTip": "GymFeesManagement\\IRepositories\\IPaymentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -77,9 +81,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "PaymentService.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Services\\PaymentService.cs",
+              "DocumentMoniker": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Services\\PaymentService.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\Services\\PaymentService.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Services\\PaymentService.cs",
+              "ToolTip": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Services\\PaymentService.cs",
               "RelativeToolTip": "GymFeesManagement\\Services\\PaymentService.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAkwDQAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -89,9 +93,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "IPaymentService.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IServices\\IPaymentService.cs",
+              "DocumentMoniker": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IServices\\IPaymentService.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\IServices\\IPaymentService.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IServices\\IPaymentService.cs",
+              "ToolTip": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\IServices\\IPaymentService.cs",
               "RelativeToolTip": "GymFeesManagement\\IServices\\IPaymentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -101,9 +105,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "PaymentController.cs",
-              "DocumentMoniker": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Controllers\\PaymentController.cs",
+              "DocumentMoniker": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "GymFeesManagement\\Controllers\\PaymentController.cs",
-              "ToolTip": "C:\\Users\\zaxsa\\Desktop\\Gym-Fees-Management-BackEnd\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Controllers\\PaymentController.cs",
+              "ToolTip": "X:\\________________________Conclusion\\Back\\Milestone3-Gym-Management-BackEnd\\GymFeesManagement\\Controllers\\PaymentController.cs",
               "RelativeToolTip": "GymFeesManagement\\Controllers\\PaymentController.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAswDoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
